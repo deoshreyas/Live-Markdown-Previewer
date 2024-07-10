@@ -58,8 +58,9 @@ body {
     background-color: transparent;
     border: 0.1em solid var(--secondary-col);
     padding: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
     box-sizing: border-box;
+    color: var(--secondary-col);
 }
 
 .flex textarea:focus {
@@ -69,11 +70,31 @@ body {
 .flex #markdown-preview {
     width: 100%;
     height: 90vh;
-    resize: none;
     margin-top: 1em;
     background-color: transparent;
     border: 0.1em solid var(--secondary-col);
     padding: 1em;
     font-size: 1.2em;
     box-sizing: border-box;
+}
+
+button {
+    position: fixed;
+    background-color: var(--secondary-col);
+    color: var(--primary-col);
+    padding: 1em 1.25em;
+    border-radius: 100em;
+    border: none;
+    right: 1em;
+    bottom: 1em;
+    font-size: 1.25em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.saveFile {
+    right: 5em;
+    bottom: 1em;
 }
