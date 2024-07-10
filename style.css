@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap');
+
+:root {
+    --primary-col: #fff9c2;
+    --secondary-col: #242424;
+    --font-headings: 'Playwrite SK', 'Helvetica', system-ui, sans-serif;
+    --font-other: system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-col);
+    color: var(--secondary-col);
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    width: 100%;
+    height: 10%;
+}
+
+.top-bar h1 {
+    font-family: var(--font-headings);
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: row;
+    font-family: var(--font-other);
+}
+
+.flex .text, .preview {
+    width: 50%;
+    height: 90%;
+    overflow: auto;
+    padding: 1em; 
+}
+
+.flex h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.flex .text textarea {
+    width: 100%;
+    height: 90vh;
+    resize: none;
+    margin-top: 1em;
+    background-color: transparent;
+    border: 0.1em solid var(--secondary-col);
+    padding: 1em;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+.flex textarea:focus {
+    outline: none;
+}
+
+.flex #markdown-preview {
+    width: 100%;
+    height: 90vh;
+    resize: none;
+    margin-top: 1em;
+    background-color: transparent;
+    border: 0.1em solid var(--secondary-col);
+    padding: 1em;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
